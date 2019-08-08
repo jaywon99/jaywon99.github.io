@@ -1,16 +1,15 @@
 ---
 title: My First Ionic App
 cover-image: hipster.jpg
-summary: 스마트폰을 사용한지 어언 10여년. 그동안 사용하면서 필요했던 앱들이 있었으나, 굳이 돈을 주고 사고 싶지 않았다가, 우연한 기회에 Ionic 4의 [Build First Ionic App]을 보고, 내가 만들고 싶은 앱도 가능하다 생각되어 이 프로젝트를 시작합니다.  
----
 
+---
 스마트폰을 사용한지 어언 10여년. 그동안 사용하면서 필요했던 앱들이 있었으나, 굳이 돈을 주고 사고 싶지 않았다가, 우연한 기회에 Ionic 4의 [Build First Ionic App](https://ionicframework.com/docs/angular/your-first-app)을 보고, 내가 만들고 싶은 앱도 가능하다 생각되어 이 프로젝트를 시작합니다.
 
 본 프로젝트는 *비밀번호가 필요한 사진첩* (Secure Gallery)입니다. 실제 AppStore나 Google Play Store에 보면, 이미 많이 나와 있고, 팔고도 있지만, 공부삼아 만들어 보려고 합니다. 또한 소스도 공개할 예정입니다.
 
 소스는 [Github repo - jaywon99/secure-gallery](https://github.com/jaywon99/secure-gallery.git)를 통해 공개할 예정이며, 매 진행마다 commit을 할 예정이다. 쉬지 않고 잘 진행되기를 모두 기원 바랍니다.
 
-필요한 기능은 다음과 같습니다.
+만들고자 하는 기능은 다음과 같습니다.
 
 * 갤러리 + 사진찍기
 * 사진 크게 보기 (디테일 포함 - 파일명, 시각)
