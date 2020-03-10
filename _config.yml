@@ -8,7 +8,7 @@ description:
   meta: this is site description
 
   # Description of your site. This will show up on the front page.
-  subtitle: Ionic Framework 기반으로 앱 개발을 처음부터 차근차근 공부하기.  <a href="https://github.com/jaywon99/">&lt;/&gt; on Github</a>.
+  subtitle: 앱 개발을 처음부터 차근차근 공부하기.  (1. Ionic Framework, 2. Flutter) <a href="https://github.com/jaywon99/">&lt;/&gt; on Github</a>.
 
 author:
   name: Jongpil Won # Change this!
@@ -74,7 +74,7 @@ date_format: "%b %-d, %Y"
 nav-breaking-point: 520px
 
 # Number of posts on each page.
-paginate: 3
+paginate: 5
 
 # Display links for the previous and next post on post pages.
 display-next-prev-post: false

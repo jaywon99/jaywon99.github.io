@@ -35,6 +35,7 @@ TODO
 [ ] Export or Sync via WIFI/Internet
 [ ] Export/Import via iTunes
 [ ] Albums 기능
+[ ] License & About 페이지
 ```
 
 그리고, 작은 업데이트 예정은 다음과 같습니다.
