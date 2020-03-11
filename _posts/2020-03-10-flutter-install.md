@@ -12,7 +12,7 @@ summary: 기존에 만들던 Ionic 4 Framework 기반의 앱은 만들다 말고
 
 소스는 [Github Repo - jaywon99/routines](https://github.com/jaywon99/routines.git)을 통해 공개할 예정이며, 매 진행마다 commit을 할 예정입니다. 이번에는 쉬지 않고 잘 진행되기를 기원합니다.
 
-### Miltstones
+### Milestones
 
 ```
 [ ] v0.1.X Empty Home + Menu List + About 화면
