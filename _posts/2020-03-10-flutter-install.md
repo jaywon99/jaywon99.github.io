@@ -1,6 +1,8 @@
 ---
 title: Flutter install
 cover-image: hipster.jpg
+categories: Flutter
+tags: [Flutter, Routines App]
 summary: 기존에 만들던 Ionic 4 Framework 기반의 앱은 만들다 말고, 주변의 의견에 따라 이번에는 Flutter용 앱을 개발해보고자 합니다. 그것을 위해 필요한 flutter 환경을 설치/설정하는 글입니다.
 ---
 
