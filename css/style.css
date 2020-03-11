@@ -279,6 +279,7 @@ article:last-of-type::after {
   margin-top: 80px;
   margin-bottom: 0;
 }
+
 a.read-more {
   display: inline-block;
   background-image: none;
@@ -486,4 +487,10 @@ nav a.current {
     margin-top: 120px;
     margin-bottom: 0;
   }
+}
+
+.post-tags {
+  margin-top: 2em;
+  margin-right: 1em;
+  text-align: right;
 }
