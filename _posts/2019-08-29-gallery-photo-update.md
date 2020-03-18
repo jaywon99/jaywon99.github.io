@@ -1,5 +1,6 @@
 ---
 title: View Photo - v0.1.1
+author: ["Jongpil Won"]
 cover-image: hipster.jpg
 categories: Ionic4
 tags: [Ionic4, Secure Gallery App]
@@ -62,7 +63,9 @@ ionic framework에 보면 component중에 ion-thumbnail과 ion-img가 있습니�
 </ion-thumbnail>
 ```
 
-![Screenshot](/img/2019-08-30-strange-thumbnail.png)
+| ![Screenshot](/assets/images/2019-08-30-strange-thumbnail.png) |
+|:--:|
+| Screenshot |
 
 다음으로는 img 대신에 ion-img를 넣어봅니다. 이 경우에는 별로 차이가 없습니다.
 
@@ -81,7 +84,9 @@ ionic framework에 보면 component중에 ion-thumbnail과 ion-img가 있습니�
 </ion-col>
 ```
 
-![Screenshot](/img/2019-08-30-with-border.png)
+| ![Screenshot](/assets/images/2019-08-30-with-border.png) |
+|:--:|
+| Screenshot |
 
 결국 발견한 것은, 이미지의 정사각형이 넓이에 맞지 않고, 높이에 맞아버렸다는 것을 알았습니다. 그래서 어떻게 하면 정사각형을 넓이에 맞출 수 있을 지 찾아보았습니다.
 
@@ -196,7 +201,9 @@ ion-grid {
 
 그 결과로 만들어진 화면은 다음과 같습니다.
 
-![Screenshot](/img/2019-08-30-final-thumbnail.png)
+| ![Screenshot](/assets/images/2019-08-30-final-thumbnail.png) |
+|:--:|
+| Screenshot |
 
 
 ### 진행상황

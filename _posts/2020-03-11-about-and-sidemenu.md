@@ -1,5 +1,6 @@
 ---
 title: Sidemenu and About - v0.1.0
+author: ["Jongpil Won"]
 cover-image: hipster.jpg
 categories: Flutter
 tags: [Flutter, Routines App]
