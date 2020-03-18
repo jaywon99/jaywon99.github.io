@@ -494,3 +494,7 @@ nav a.current {
   margin-right: 1em;
   text-align: right;
 }
+
+div.author {
+    text-align: right;
+}
