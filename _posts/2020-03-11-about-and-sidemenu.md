@@ -36,6 +36,7 @@ Navigation방식은 new page and back style로 할 예정입니다.
 참고 페이지에는 5개의 메뉴가 있으나, 2개만 남기고 다 지우고, 그 두개의 text 및 icon을 바꿔줍니다. (어떤 icon이 있는지는 [https://api.flutter.dev/flutter/material/Icons-class.html](https://api.flutter.dev/flutter/material/Icons-class.html) 참조)
 
 소스: [lib/widgets/sidemenu.dart](https://github.com/jaywon99/routines/blob/237544d0d5976078ee644b8348cd2b7042e64c41/lib/widgets/sidemenu.dart)
+다른참조: [https://flutter.dev/docs/cookbook/design/drawer](https://flutter.dev/docs/cookbook/design/drawer)
 
 ### sidemenu 추가
 
