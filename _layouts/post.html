@@ -28,6 +28,8 @@ layout: default
   </div>
 
 		{{ content }}
+
+  <div class="author">
   {% if site.display-author-post-page %}
     {% if page.author.name %}
       <small><em>{{ site.var_guest_post_by }}: {{ page.author.name }} {{ page.author.info }}</em></small>
@@ -37,20 +39,21 @@ layout: default
       {% endif %}
     {% endif %}
   {% endif %}
+  </div>
 </article>
 
 {% if site.display-next-prev-post and page.previous.url or site.display-next-prev-post and page.next.url %}
 <div class="pagination clearfix">
   <div class="left">
     {% if page.next.url %}
-      <a href="{{ page.next.url | prepend: site.baseurl }}">‹ {{ site.var_next_post }}</a>
+      <a href="{{ page.next.url | prepend: site.baseurl }}">‹ {{ page.next.title }}</a>
     {% else %}
       <span class="disabled">‹ {{ site.var_next_post }}</span>
     {% endif %}
   </div>
   <div class="right">
     {% if page.previous.url %}
-      <a href="{{ page.previous.url | prepend: site.baseurl }}">{{ site.var_previous_post }} ›</a>
+      <a href="{{ page.previous.url | prepend: site.baseurl }}">{{ page.previous.title }} ›</a>
     {% else %}
       <span class="disabled">{{ site.var_previous_post }} ›</span>
     {% endif %}
