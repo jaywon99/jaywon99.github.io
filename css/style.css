@@ -423,7 +423,7 @@ nav a.current {
   }
   li {
     padding-left: 10px;
-    margin: 30px 0;
+    margin: 10px 0; /* was 30px 0 */
   }
   table {
     margin: 40px auto;
@@ -493,4 +493,8 @@ nav a.current {
   margin-top: 2em;
   margin-right: 1em;
   text-align: right;
+}
+
+div.author {
+    text-align: right;
 }
