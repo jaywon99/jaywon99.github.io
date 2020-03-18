@@ -1,5 +1,6 @@
 ---
 title: Gallery and Take photo - v0.1.0
+author: ["Jongpil Won"]
 cover-image: hipster.jpg
 categories: Ionic4
 tags: [Ionic4, Secure Gallery App]
@@ -36,7 +37,9 @@ ionic cordova platform add android
 ## 목표 화면
 만들려는 화면은 다음과 같습니다.
 
-![Screenshot](/img/2019-08-29-secure-gallery-home.png)
+| ![Screenshot](/assets/images/2019-08-29-secure-gallery-home.png) |
+|:--:|
+| Screenshot |
 
 ## 단계별 진행
 수정된 파일은 다음과 같습니다.

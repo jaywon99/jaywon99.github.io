@@ -1,5 +1,6 @@
 ---
 title: Routines List 관리 화면
+author: ["Jongpil Won"]
 cover-image: hipster.jpg
 categories: Flutter
 tags: [Flutter, Routines App]
@@ -32,20 +33,23 @@ class Routine {
 }
 ```
 
-참조: (/lib/models/routines.dart)[https://github.com/jaywon99/routines/blob/57f1d144a6fd6aa17e1eed1065e24855669c95a5/lib/models/routines.dart]
+참조: [/lib/models/routines.dart](https://github.com/jaywon99/routines/blob/57f1d144a6fd6aa17e1eed1065e24855669c95a5/lib/models/routines.dart)
 
 ### 리스트에서 Item 보여줄 형식 정하기 (ListTile Widget)
 
 ListTile Widget은 ListView Widget 사용시, 내부에 보여줄 Child의 형식 중 가장 보편적인 것을 만들어 놓은 Widget으로, 앞에 아이콘, 제목, 소제목, 그리고 오른편에 아이콘 형식의 뷰를 제공하도록 이미 만들어진 Widget입니다. 좀 더 복잡한 것이 필요한 분은, 스스로 Widget을 만들어서 사용하면 됩니다만, 여기서 제가 원하는 것은 이정도면 충분한 것이어서 이를 사용하였습니다.
 
-ListTile (https://api.flutter.dev/flutter/material/ListTile-class.html)[https://api.flutter.dev/flutter/material/ListTile-class.html]
+ListTile [https://api.flutter.dev/flutter/material/ListTile-class.html](https://api.flutter.dev/flutter/material/ListTile-class.html)
 * title: 메인 텍스트
 * subtitle: 서브 텍스트 - 메인텍스트 아래에 좀 작은 글씨로 적힘
 * leading: 텍스트 앞에 보여줄 아이콘 (또는 Widget)의 공간
 * trailing: 텍스트 뒤에 보여줄 아이콘 (또는 Widget)의 공간
 * onTap: Tile 탭 시에 호출되는 callback
 
-![화면 #1:](/img/0.2.0-routines-color-rect.png)
+{:.center}
+| ![화면 #1:](/assets/images/0.2.0-routines-color-rect.png) |
+|:--:| 
+| *화면 #1* |
 
 코드
 ```
@@ -63,7 +67,10 @@ ListTile (https://api.flutter.dev/flutter/material/ListTile-class.html)[https://
 
 처음에는 Color Rectangle을 썼으나, AvatarCircle도 모양이 이쁜 것 같아서 그냥 사용하기로 하였습니다.
 
-![화면 #2:](/img/0.2.0-routines-color-circle.png)
+{:.center}
+| ![화면 #2:](/assets/images/0.2.0-routines-color-circle.png) |
+|:--:|
+| *화면 #2* |
 
 코드
 ```
@@ -86,10 +93,10 @@ ListView를 쓰는 방법은 자체 Child를 넣는 방법과 itemBuilder를 쓰
 ```
 class RoutineList extends StatefulWidget {
   @override
-  _RoutineListState createState() => _RoutineListState();
+  \_RoutineListState createState() => \_RoutineListState();
 }
 
-class _RoutineListState extends State<RoutineList> {
+class \_RoutineListState extends State<RoutineList> {
   List<Routine> routines = <Routine>[...];
   @override
   Widget build(BuildContext context) {
@@ -118,14 +125,14 @@ class _RoutineListState extends State<RoutineList> {
     );
   }
 
-  void _newRoutineItem() {
+  void \_newRoutineItem() {
     Navigator.push(
       context,
       MaterialPageRoute(builder: (context) => RoutineItemEditForm()),
     );
   }
 
-  void _editRoutineItem(Routine routine) {
+  void \_editRoutineItem(Routine routine) {
     Navigator.push(
       context,
       MaterialPageRoute(builder: (context) => RoutineItemEditForm()),
@@ -165,7 +172,7 @@ class _RoutineListState extends State<RoutineList> {
 ### Swipe로 삭제하기 (Dismissible)
 다음으로 List에서 하나의 item을 삭제하기 위해, swipe 방식으로 삭제를 하려고 이리저리 고민하다가, 검색 first!를 이용하여 찾아보니 Dismissible이라는 Widget이 있으며, 아주 쉽게 지원한다고 합니다.
 
-Dismissible (https://api.flutter.dev/flutter/widgets/Dismissible-class.html)[https://api.flutter.dev/flutter/widgets/Dismissible-class.html]
+Dismissible [https://api.flutter.dev/flutter/widgets/Dismissible-class.html](https://api.flutter.dev/flutter/widgets/Dismissible-class.html)
 * key: 삭제용 Key
 * background: swipe시에 보여줄 화면
 * secondaryBackground: swipe right시에 보여줄 화면, 없을 경우 background 사용
@@ -226,9 +233,9 @@ Dismissible (https://api.flutter.dev/flutter/widgets/Dismissible-class.html)[htt
 
 다음으로는 기존 값의 수정 및 새로운 입력을 위한 양식 화면을 만들고자 합니다. 먼저, 순수하게 빈 양식 화면을 만들어 보겠습니다.
 
-참조: https://flutter.dev/docs/cookbook/forms
+참조: [https://flutter.dev/docs/cookbook/forms](https://flutter.dev/docs/cookbook/forms)
 
-먼저, 하나의 textfield를 추가하는 양식을 만드는 것은 다음의 페이지를 참조바랍니다. (// https://flutter.dev/docs/cookbook/forms/retrieve-input)[// https://flutter.dev/docs/cookbook/forms/retrieve-input]
+먼저, 하나의 textfield를 추가하는 양식을 만드는 것은 다음의 페이지를 참조바랍니다. [https://flutter.dev/docs/cookbook/forms/retrieve-input](https://flutter.dev/docs/cookbook/forms/retrieve-input)
 
 본 화면에서는 3개의 입력 필드 (2개는 텍스트, 1개는 색상선택)가 필요합니다.
 색상선택필드는 나중에 다시 하기로 하고, 먼저 두개의 텍스트 필드를 만듭니다.
@@ -238,7 +245,7 @@ Dismissible (https://api.flutter.dev/flutter/widgets/Dismissible-class.html)[htt
 Form은 입력 폼들을 묶어 놓기 위한 Widget으로, 현재 사용하는 것은 validation밖에 없습니다. 좀 더 공부가 필요합니다.
 TextFormField는 Text입력 Widget입니다.
 
-TextFormField (https://api.flutter.dev/flutter/material/TextFormField-class.html)[https://api.flutter.dev/flutter/material/TextFormField-class.html]
+TextFormField [https://api.flutter.dev/flutter/material/TextFormField-class.html](https://api.flutter.dev/flutter/material/TextFormField-class.html)
 * decoration: InputDecoration
  * labelText: 입력창의 타이틀(?) 텍스트
  * hintText: 입력창 힌트 텍스트 (원래 뒤에 보였다가, 입력하면 사라지는 placeholder)
@@ -324,7 +331,7 @@ class \_RoutineItemEditFormState extends State<RoutineItemEditForm> {
 #### 입력된 내용을 목록에 반영
 입력된 내용을 목록에 반영하는 방법은 여러가지가 있겠으나 (status에서 자체 수정하거나, 입력된 내용을 호출한 화면에 전달하는 방법 등), 그 중에서 입력된 내용을 후출한 화면에 전달하는 방법에 대해 알아보겠습니다.
 
-참조: https://flutter.dev/docs/cookbook/navigation/returning-data
+참조: [https://flutter.dev/docs/cookbook/navigation/returning-data](https://flutter.dev/docs/cookbook/navigation/returning-data)
 
 작업은 크게 두가지로, 입력화면의 종료시 action과 호출화면에서의 결과 수집으로 나뉘게 됩니다.
 
@@ -451,7 +458,7 @@ class RoutineItemEditForm extends StatefulWidget {
 ### ColorPicker를 위한 Widget
 마지막으로 routine의 입력시 표시를 이쁘게 하기 위해 색상을 넣고자 했습니다. 이에 어떻게 하면 색상을 입력할 수 있을까 고민하다가, 아래의 plugin을 찾았습니다. 설치 방법은 아래의 url을 참조하세요.
 
-참조: https://github.com/mchome/flutter_colorpicker
+참조: [https://github.com/mchome/flutter_colorpicker](https://github.com/mchome/flutter_colorpicker)
 
 위의 color picker는 widget type의 color picker로서, 저는 색상버튼/바을 넣고, 해당 버튼을 누르면 popup이 되어 색상을 선택하는 방식으로 동작하고 싶었습니다. 거기에 TextEditingController와 같이 controller 기반으로 자료를 접근하고도 싶었습니다. 그래서 새로운 widget을 만들고자 시도하였습니다.
 
@@ -463,9 +470,9 @@ class RoutineItemEditForm extends StatefulWidget {
 
 본 코드에서 ColorPickingController를 만들기 위해 TextEditingController 소스코드와 TextFormField 소스 코드를 공부하였고, 그와 함께 ValueNotifier 소스 코드도 공부하였습니다. 좋은 경험이었습니다.
 
-[TextEditingController 소스코드](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/widgets/editable_text.dart)
-[TextFormField 소스코드](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/text_form_field.dart)
-[ValueNotifier 소스코드](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/foundation/change_notifier.dart)
+[TextEditingController 소스코드](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/widgets/editable_text.dart)  
+[TextFormField 소스코드](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/text_form_field.dart)  
+[ValueNotifier 소스코드](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/foundation/change_notifier.dart)  
 
 이 코드에는 좋은 아이디어가 있다면, 언제든지 환영합니다.
 
@@ -473,11 +480,11 @@ class RoutineItemEditForm extends StatefulWidget {
 
 [RaisedButton 소스코드](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/raised_button.dart)
 
-관련 form에 넣은 부분은 (/lib/widgets/routines/editform.dart)[https://github.com/jaywon99/routines/blob/57f1d144a6fd6aa17e1eed1065e24855669c95a5/lib/widgets/routines/editform.dart]를 참조하세요.
+관련 form에 넣은 부분은 [/lib/widgets/routines/editform.dart](https://github.com/jaywon99/routines/blob/57f1d144a6fd6aa17e1eed1065e24855669c95a5/lib/widgets/routines/editform.dart)를 참조하세요.
 
 ---
 
-v0.2.0 최종본은 (https://github.com/jaywon99/routines/tree/57f1d144a6fd6aa17e1eed1065e24855669c95a5)[https://github.com/jaywon99/routines/tree/57f1d144a6fd6aa17e1eed1065e24855669c95a5]에 있습니다.
+v0.2.0 최종본은 [https://github.com/jaywon99/routines/tree/57f1d144a6fd6aa17e1eed1065e24855669c95a5](https://github.com/jaywon99/routines/tree/57f1d144a6fd6aa17e1eed1065e24855669c95a5)에 있습니다.
 
 위와 같이 routine들을 신규/수정/목록 그리고 색상 선택까지 마쳤습니다. 이번 글은 좀 길었습니다. 한 3개쯤 나눠서 썼어야 하는 건 아니었나 싶습니다. 다음에는 이번에 만든 routine을 local에 저장하는 기능을 만들예정입니다.
 

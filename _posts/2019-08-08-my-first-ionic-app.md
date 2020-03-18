@@ -1,5 +1,6 @@
 ---
 title: My First Ionic App
+author: ["Jongpil Won"]
 cover-image: hipster.jpg
 categories: Ionic4
 tags: [Ionic4, Secure Gallery App]

@@ -1,5 +1,6 @@
 ---
 title: Flutter install
+author: ["Jongpil Won"]
 cover-image: hipster.jpg
 categories: Flutter
 tags: [Flutter, Routines App]
