@@ -1,9 +1,9 @@
 ---
-title: Memory DAO / Bloc / Named route with parameter
+title: Memory DAO / Bloc / Named route with parameter - v0.2.1
 author: ["Jongpil Won"]
 cover-image: hipster.jpg
 categories: Flutter
-tags: [Flutter, Routines App]
+tags: [Flutter, Routines-App]
 summary: 원래 sqlite를 추가한 persistence layer를 붙이려고 했으나, 그 전에 bloc에 대해 먼저 얘기하고 적용하는 게 좋다고 판단하여, 이번에는 bloc의 적용 및 in-memory style persistence layer를 추가하였습니다. 그와 함께 약간의 refactoring 및 named route에 parameter를 이용하는 것을 추가하였습니다.
 
 ---

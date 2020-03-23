@@ -21,7 +21,7 @@
 /* Content */
 
 body {
-  font-family: "Crimson Text", Georgia, Cambria, 'Nanum Gothic', "Times New Roman", Times, serif;
+  font-family: 'Nanum Gothic', "Crimson Text", Georgia, Cambria, "Times New Roman", Times, serif;
   font-size: 22px;
   -webkit-font-smoothing: antialiased;
   font-weight: 400;
@@ -82,7 +82,7 @@ li {
   line-height: 1.4;
 }
 li * {
-  line-height: 1em; /* Bold font line-height fix */
+  line-height: 1.4; /* Bold font line-height fix */
 }
 img {
   max-width: 100%;
@@ -498,3 +498,8 @@ nav a.current {
 div.author {
     text-align: right;
 }
+
+li .tag-head {
+    margin-top: 1.5em;
+}
+
