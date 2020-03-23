@@ -3,7 +3,7 @@ title: Sidemenu and About - v0.1.0
 author: ["Jongpil Won"]
 cover-image: hipster.jpg
 categories: Flutter
-tags: [Flutter, Routines App]
+tags: [Flutter, Routines-App]
 summary: 두번째 Task는 about page를 만들어 넣고, 페이지 접근을 위해 sidemenu를 넣었습니다.
 
 ---

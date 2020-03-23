@@ -1,9 +1,9 @@
 ---
-title: Routines List 관리 화면
+title: Routines List 관리 화면 - v0.2.0
 author: ["Jongpil Won"]
 cover-image: hipster.jpg
 categories: Flutter
-tags: [Flutter, Routines App]
+tags: [Flutter, Routines-App]
 summary: Routines의 목록 관리 (추가, 수정, 삭제)를 제공하는 화면을 사용하였습니다. 사용한 위젯은 (ListTile, ListView, TextFormField, ColorPicker) 등입니다.
 
 ---

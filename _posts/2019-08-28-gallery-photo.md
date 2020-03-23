@@ -3,7 +3,7 @@ title: Gallery and Take photo - v0.1.0
 author: ["Jongpil Won"]
 cover-image: hipster.jpg
 categories: Ionic4
-tags: [Ionic4, Secure Gallery App]
+tags: [Ionic4, Secure-Gallery-App]
 summary: 첫번째 태스크는 ionic 4를 이용하여 initial repo를 만들고, gallery를 만드는 것입니다. 참고페이지는 [Build First Ionic App]이지만, 해당 페이지는 Tab을 기반으로 만든 것이고, 여기서는 sidemenu를 이용해서 만들 예정입니다.
 
 ---
