@@ -3,7 +3,7 @@ title: View Photo - v0.1.1
 author: ["Jongpil Won"]
 cover-image: hipster.jpg
 categories: Ionic4
-tags: [Ionic4, Secure Gallery App]
+tags: [Ionic4, Secure-Gallery-App]
 summary: 이번 단계에서는 v0.1.0에서 보기 좋지 않았던 몇가지를 빠르게 검색해서 수정하려했으나, 생각보다 문제가 커졌네요. grid를 거의 재구축했습니다.
 
 ---

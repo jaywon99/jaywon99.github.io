@@ -3,7 +3,7 @@ title: My First Ionic App
 author: ["Jongpil Won"]
 cover-image: hipster.jpg
 categories: Ionic4
-tags: [Ionic4, Secure Gallery App]
+tags: [Ionic4, Secure-Gallery-App]
 summary: 스마트폰을 사용한지 어언 10여년. 그동안 사용하면서 필요했던 앱들이 있었으나, 굳이 돈을 주고 사고 싶지 않았다가, 우연한 기회에 Ionic 4의 [Build First Ionic App]을 보고, 내가 만들고 싶은 앱도 가능하다 생각되어 이 프로젝트를 시작합니다.  
 ---
 

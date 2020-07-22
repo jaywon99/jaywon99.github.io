@@ -3,7 +3,7 @@ title: Named Routes - v0.1.1
 author: ["Jongpil Won"]
 cover-image: hipster.jpg
 categories: Flutter
-tags: [Flutter, Routines App]
+tags: [Flutter, Routines-App]
 summary: AboutPage를 StatefulWidget에서 StatelessWidget으로 변경하고, 불필요한 코멘트 제거하고, 이와 함께 Named Routes로 기본 라우팅을 변경하였습니다.
 
 ---
