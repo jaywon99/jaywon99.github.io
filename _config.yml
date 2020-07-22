@@ -1,6 +1,6 @@
 
 # The name of your website.
-title: Jayrang's Blog
+title: "Jayrang's Blog"
 
 description:
 
@@ -21,7 +21,7 @@ author:
   info:
 
 url: http://jaywon99.github.io
-baseurl: "/"
+baseurl: ""
 
 # language attribute in <html> element.
 lang: en
