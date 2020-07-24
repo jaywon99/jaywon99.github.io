@@ -89,6 +89,23 @@ Study repo: [https://github.com/jaywon99/vue-study.git](https://github.com/jaywo
         + ...
     ```
 
+- vue.config.js (template)
+
+    ```jsx
+    module.exports = {
+        pages: {
+            index: {
+                entry: 'src/app/main.js',
+                template: 'public/index.html',
+                filename: 'index.html',
+                title: 'Vue Study',
+                chunks: ['chunk-vendors', 'chunk-common', 'index'],
+            },
+        },
+        publicPath: '/',
+    }
+    ```
+
 ### 기타
 - axios를 이용해서 api를 연동 (이게 쉬움)
 - 실제 개발을 들어가기 전에 화면을 그려놓으면 일하기 편함. 그렇지 않으면 이동이 아주 잦을거라 예상됨
